@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Posts{% endblock %}
+
+{% block content %}
+<br><br><br><br><br>
+<div class="blogpost" style="margin-left: 200px; margin-right: 200px;">
+<h1 style="font-family: 'Poppins', sans-serif; font-size: 40px;">{{ post['title'] }}</h1><br><br><br>
+<p style="font-family: 'Wix Madefor Text', sans-serif; font-size: 15px;">{{ post['content']|replace('.', '.<br><br>')|safe }}</p>
+</div>
+{% endblock %}
